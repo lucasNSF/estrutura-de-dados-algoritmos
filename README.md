@@ -5,6 +5,7 @@ O objetivo deste repositório é registrar meus estudos para a matéria de Estru
 ## Conteúdos das Aulas 🔎
 
 1. [Aula 01 - TAD (Tipo Abstrato de Dado)](#tad-tipo-abstrato-de-dado)
+2. [Aula 02 - Modularização e TAD](#modularização-e-tad)
 
 ## TAD (Tipo Abstrato de Dado)
 
@@ -25,3 +26,12 @@ Utilizar TAD traz vantagens ao software como:
 
 1. **Encapsulamento e Segurança**: usuário não tem acesso direto aos dados.
 2. **Flexibilidade e Reutilização**: podemos alterar o TAD sem alterar as aplicações que o utilizam.
+
+## Modularização e TAD
+
+A convenção em linguagem C é preparar 2 arquivos para implementar um TAD:
+
+- Arquivo **.H**: para protótipos das funções, tipos de ponteiros, e dados globalmente acessíveis.
+- Arquivo **.C**: para declaração dos tipos de dados e implementação das suas funções.
+
+Dessa forma é separado o conceito da implementação. [Veja o exemplo prático da aula!](./aula02/aula02.md)
