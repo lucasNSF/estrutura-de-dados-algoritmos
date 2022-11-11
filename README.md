@@ -35,3 +35,34 @@ A convenção em linguagem C é preparar 2 arquivos para implementar um TAD:
 - Arquivo **.C**: para declaração dos tipos de dados e implementação das suas funções.
 
 Dessa forma é separado o conceito da implementação. [Veja o exemplo prático da aula!](./aula02/aula02.md)
+
+## Listas
+
+É uma estrutura que armazena uma sequência de elementos do mesmo tipo. Seus elementos possuem estrutura interna abstraída, ou seja, sua complexidade é arbitrária e não afeta o seu funcionamento.
+
+Uma lista pode possuir N elementos e, se N = 0, consideramos que a lista está vazia.
+
+Aplicações:
+
+- Cadastro de funcionários
+- Itens em estoque
+- Cartas de baralho
+- Outras opções
+
+As operações na lista dependem do tipo de alocação de memória usada:
+
+1. **Estática**:
+
+- O espaço de memória é alocado no momento da compilação.
+- Exige a definição do número máximo de elementos da lista.
+- Acesso sequencial: elementos consecutivos na memória.
+
+[Veja a implementação!](./aula03/lista-estatica/)
+
+2. **Dinâmica**:
+
+- O espaço de memória é alocado em tempo de execução.
+- A lista cresce a medida que elementos são inseridos e vice-versa.
+- Acesso encadeado: cada elemento pode estar em uma área distinta da memória. Para acessar um elemento, é preciso percorrer todos os antecessores na lista.
+
+[Veja a implementação!](./aula03/lista-dinamica/)
